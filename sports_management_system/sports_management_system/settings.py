@@ -27,7 +27,15 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "smsp-1.onrender.com",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://smsp-1.onrender.com",
+]
 
 
 # Application definition
